@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">Navbar</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav mx-auto">
+              <a className="nav-link active" aria-current="page" href="/">Home</a>
+              <a className="nav-link" href="/">Features</a>
+              <a className="nav-link" href="/">Pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
 
