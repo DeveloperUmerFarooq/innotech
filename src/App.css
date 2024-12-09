@@ -8,7 +8,11 @@
   background-color: var(--primary);
 }
 
-#contact label{
+.res-font{
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
+.btn-primary{
+  color:var(--primary)  !important;
+  background-color: var(--tertiary) !important;
+}

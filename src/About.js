@@ -22,7 +22,7 @@ export default function About() {
       </div>
     </div>
     {aboutUs.map((elem,index)=><div className='row mt-5 pt-5'>
-      {index%2===0?(<div key={index}>
+      {index%2!==0?(<div className='row' key={index}>
       <div className='col-12 col-md-6 d-flex flex-column justify-content-center gap-5'>
           <h1 style={{'color':'var(--secondary)'}}>{elem.title}</h1>   
           <p className='fs-5'>{elem.content}</p>
@@ -36,7 +36,7 @@ export default function About() {
       </div>
       </div>)
 
-      :(<div key={index} >
+      :(<div className='row' key={index} >
       <div className="col-12 col-md-6 text-center">
         <img
           src={elem.src}
