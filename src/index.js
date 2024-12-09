@@ -1,10 +1,10 @@
-import React from 'react';
+import React,{lazy} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router';
-import About from './About';
+const About = lazy(()=> import('./About') )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
