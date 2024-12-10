@@ -1,20 +1,21 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import aboutUs from './about.json'
-import Contact from './Contact'
+import Contact from './components/Contact'
 import Footer from './components/Footer';
+import Goals from './Goals';
 export default function About() {
   return ( 
-    <>
+    <div style={{backgroundColor:'var(--primary)'}}>
     <Navbar/>
-    <div className="container-fluid pt-md-5 pt-3 pt-3 px-5" style={{ backgroundColor: 'var(--primary)' }}>
+    <div className="container-fluid pt-md-5 pt-3 pt-3 px-5">
   <div className="container-fluid pt-5 rounded-3 px-md-5">
     <div className="row  flex-columnlex-sm-column-reverse align-items-center">
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
           <div className="d-flex flex-column">
             <h2>About</h2>
             <h1 className="mt-3" style={{ 'color': "var(--secondary)" }}>Inno Tech Solutions</h1>
-            <p className="fs-4 mt-3">Innovative web solutions, design excellence, ensuring unparalleled digital success for clients</p>
+            <p className="res-font mt-3">Innovative web solutions, design excellence, ensuring unparalleled digital success for clients</p>
           </div>
       </div>
       <div className="col-12 col-md-6 text-center">
@@ -25,7 +26,7 @@ export default function About() {
       {index%2!==0?(<div className='row' key={index}>
       <div className='col-12 col-md-6 d-flex flex-column justify-content-center gap-5'>
           <h1 style={{'color':'var(--secondary)'}}>{elem.title}</h1>   
-          <p className='fs-5'>{elem.content}</p>
+          <p className='res-font'>{elem.content}</p>
       </div>
       <div className="col-12 col-md-6 text-center">
         <img
@@ -46,10 +47,13 @@ export default function About() {
       </div>
       <div className='col-12 col-md-6 d-flex flex-column justify-content-center gap-5'>
           <h1 style={{ 'color': "var(--secondary)" }}>{elem.title}</h1>
-          <p className='fs-5'>{elem.content}</p>   
+          <p className='res-font'>{elem.content}</p>   
       </div>
       </div>)}
     </div>)}
+  </div>
+</div>
+<Goals/>
     <div className='mt-5 pt-5'>
       <h1 className='text-center'>Contact Us</h1>
       <br/>
@@ -57,9 +61,7 @@ export default function About() {
     <Contact/>
       </div>
     </div>
-  </div>
-</div>
     <Footer/>
-    </>
+    </div>
   )
 }

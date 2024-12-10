@@ -1,8 +1,8 @@
 import React from 'react'
-import './App.css'
+import '../App.css'
 export default function Contact() {
   return (
-    <div className='container-fluid' id='contact'>
+    <div className='container-fluid pb-3' id='contact'>
        <div className='rounded-5' id="form" >
           <form className='row d-flex flex-column' action="https://api.web3forms.com/submit" method="POST" id='child'>
           <input type="hidden" name="access_key" value="26429c7f-984e-444c-b499-b756a3fa93f0"/>

@@ -9,10 +9,14 @@
 }
 
 .res-font{
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
 }
 
 .btn-primary{
   color:var(--primary)  !important;
   background-color: var(--tertiary) !important;
+}
+header{
+  z-index: 20;
+  background-color: var(--tertiary);
 }

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { lazy, useEffect } from 'react'
 import Footer from './components/Footer'
-import Carousel from './components/Carousel'
-import why from './whyus.json'
-import Card from './components/Card'
+import { useLocation } from 'react-router';
+const Goals=lazy(()=>import('./Goals'));
+const WhyUs = lazy(()=>import('./WhyUs'))
+const Contact = lazy(()=>import('./components/Contact'))
 export default function Home() {
   return (
     <div className="pt-5" style={{ backgroundColor: 'var(--primary)' }}>
@@ -23,16 +24,11 @@ export default function Home() {
       </div>
     </div>
   </div>
-  <div className="container mt-5">
-    <h1 className='text-center fs-1'>Why Choose Us</h1>
-    <hr/>
-    <div className='d-flex flex-wrap flex-grow gap-5 justify-content-center mb-5'>
-    {why.map((elem, index) => (
-  <Card key={index} title={elem.title} description={elem.description} />
-      ))}
-
-    </div>
-  </div>
+  
+  <Goals/>
+  
+  <WhyUs/>
+  
     <div className='py-3' style={{ backgroundColor: 'var(--secondary)' }}>
       <h1 className='fs-1 text-center' style={{color:'var(--primary)'}}>Get Started</h1>
       <p className='text-center res-font'>Ready to take your business to the next level? Contact us today to discuss your project and learn how we can help.
@@ -41,6 +37,10 @@ export default function Home() {
         <a href="#contact"><button className="btn btn-primary p-2">Contact us</button></a>
       </div>
     </div>
+    <div className='container pb-5 mt-5'>
+    <h1 className='text-center fs-1'>Contact Us</h1>
+    <Contact/>
+      </div>
   <Footer/>
 </div>
   )

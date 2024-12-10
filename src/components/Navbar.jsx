@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 export default function Navbar(links) {
   return (
     <header className='position-sticky top-0 p-0 m-0' style={{'top':'-2px'}}>
-    <nav className="navbar navbar-expand-lg m-0" data-bs-theme="dark" style={{'backgroundColor':'var(--tertiary)','zIndex':2}}>
+    <nav className="navbar navbar-expand-lg m-0" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand fs-4" style={{'color':'var(--primary)'}} href="/">Inno Tech Solutions</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ export default function Navbar(links) {
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">Services</Link>
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">Projects</Link>
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">About us</Link>
-              <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">Contact us</Link>
+              <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/contact">Contact us</Link>
             </div>
           </div>
         </div>

@@ -1,18 +1,43 @@
-import React,{lazy} from 'react';
+import React,{lazy, Suspense, useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
+import Lottie from "lottie-react";
+import animation from './Loader.json'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router';
-const About = lazy(()=> import('./About') )
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
+const About = lazy(()=> import('./About'));
+const Contactus = lazy(()=> import('./Contactus.js'));
+const ScrollToTop = () => {
+  const location = useLocation();
+  console.log(location)
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top
+  }, [location]);
 
+  return null; // This component does not render anything
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
-      <Route path='/' element={<App/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
+      <Route path='/' element={
+          <Suspense fallback={<Lottie animationData={animation} />}>
+          <App/></Suspense>
+        }></Route>
+
+        <Route path='/about' element={
+          <Suspense fallback={<Lottie animationData={animation} />}>
+          <About/></Suspense>
+        }></Route>
+
+        <Route path='/contact' element={
+          <Suspense fallback={<Lottie animationData={animation} />}>
+          <Contactus/></Suspense>
+        }/>
+          
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
