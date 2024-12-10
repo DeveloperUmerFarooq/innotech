@@ -18,6 +18,7 @@ export default function Technologies() {
     const options={
         autoplay:true,
         dots:false,
+        loop:true,
         responsive:{
             0:{
                 items:2,
@@ -34,12 +35,12 @@ export default function Technologies() {
     }
   return (
     <div className='mt-3' style={{backgroundColor:'var(--tertiary)',color:'var(--primary)'}}>
-    <h1 className='text-center fs-1 mb-0'>Technologies we know</h1>
-    <OwlCarousel className="owl-theme" loop {...options}>
+    <h1 className='text-center fs-1 mb-3'>Technologies we know</h1>
+    <OwlCarousel className="owl-theme mb-2" {...options}>
         {techs.map((tech,index)=>
         <div key={index} className='item d-flex justify-content-center align-items-center' style={{height:'5rem'}}>
         {(tech==="Bootstrap"||tech==="Tailwind CSS")?<div><img className='img-anime mx-1' src={lotties[index]}/></div>:lotties&&<Lottie  loop={true}  animationData={lotties[index]} style={{height:'5rem'}} />}
-        <h2 className='text-center d-flex align-items-center res-font'>{tech}</h2>
+        <h2 className='text-center d-flex align-items-center fs-3 mt-3' style={{color:'var(--primary)'}}>{tech}</h2>
         </div> 
         )}
     </OwlCarousel>

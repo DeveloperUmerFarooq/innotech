@@ -8,16 +8,16 @@ export default function Footer() {
 <footer className="text-center text-lg-start w-100" style={{ backgroundColor: "var(--tertiary)" }}>
   <div className="container d-flex justify-content-center py-5">
     <button type="button" className="btn btn-primary btn-lg btn-floating mx-2" style={{ backgroundColor: "var(--secondary)" }}>
-      <i className="fab fa-facebook-f" />
+      <i className="fab fa-facebook-f"  style={{color:'var(--primary)'}}/>
     </button>
     <button type="button" className="btn btn-primary btn-lg btn-floating mx-2" style={{ backgroundColor: "var(--secondary)" }}>
-    <i className="fa-brands fa-linkedin" />
+    <i className="fa-brands fa-linkedin" style={{color:'var(--primary)'}} />
     </button>
     <button type="button" className="btn btn-primary btn-lg btn-floating mx-2" style={{ backgroundColor: "var(--secondary)" }}>
-      <i className="fab fa-instagram" />
+      <i className="fab fa-instagram"  style={{color:'var(--primary)'}}/>
     </button>
     <button type="button" className="btn btn-primary btn-lg btn-floating mx-2" style={{ backgroundColor: "var(--secondary)" }}>
-      <i className="fab fa-twitter" />
+      <i className="fab fa-twitter"  style={{color:'var(--primary)'}}/>
     </button>
   </div>
 

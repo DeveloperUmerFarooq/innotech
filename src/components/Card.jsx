@@ -8,7 +8,7 @@ export default function Card({ title, description, src,shadow=true,color}) {
         <div className="card-body mb-3" style={{ height: "10rem",color:`${color&&`var(--${color})`}` }}>
           <h5 className="card-title">{title}</h5>
           <hr />
-          <p className="card-text">{description}</p>
+          <p className="card-text" style={{color:'var(--primary)'}}>{description}</p>
         </div>
       </div>
     </div>
