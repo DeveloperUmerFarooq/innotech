@@ -1,6 +1,5 @@
-import React, { lazy, useEffect } from 'react'
+import React, { lazy} from 'react'
 import Footer from './components/Footer'
-import { useLocation } from 'react-router';
 const Goals=lazy(()=>import('./Goals'));
 const WhyUs = lazy(()=>import('./WhyUs'))
 const Contact = lazy(()=>import('./components/Contact'))
