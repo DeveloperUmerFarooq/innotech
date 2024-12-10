@@ -10,8 +10,8 @@ export default function Home() {
   <div className="container">
     <div className="row mt-5 align-items-center">
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
-        <h1>Welcome to InnoTech Solutions</h1>
-        <p className="fs-4 mx-auto mx-md-0 text-justify">
+        <h1 style={{color:'var(--secondary)'}}>Welcome to InnoTech Solutions</h1>
+        <p className="res-font mx-auto mx-md-0 text-justify">
           At InnoTech Solutions, we drive innovation and growth through cutting-edge technology solutions. Our mission is to empower businesses with the tools and expertise needed to thrive in an ever-evolving digital landscape.
         </p>
       </div>

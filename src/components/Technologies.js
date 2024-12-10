@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import techs from '../techs.json'
+import React, {useState } from 'react'
 import OwlCarousel from 'react-owl-carousel';
+import Lottie from 'lottie-react';
+import techs from '../techs.json'
 import '../App.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -12,7 +13,6 @@ import figma from '../techAnimations/Figma.json';
 import laravel from '../techAnimations/Laravel.json';
 import bootstrap from '../techAnimations/bootstrap.png';
 import tailwind from '../techAnimations/tailwindcss.png';
-import  Lottie from 'lottie-react';
 export default function Technologies() {
     const [lotties,setLotties]=useState([react,html,css,js,bootstrap,tailwind,figma,laravel]);
     const options={

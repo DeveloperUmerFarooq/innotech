@@ -9,7 +9,7 @@ export default function Contactus() {
     <Navbar/>
     <div className="container-fluid mt-md-5 mt-3 pt-3 px-5 pb-5">
           <div className="container-fluid pt-5 rounded-3 px-md-5">
-            <div className="row  flex-columnlex-sm-column-reverse align-items-center">
+            <div className="row flex-md-row flex-column-reverse align-items-center">
               <div className="col-md">
                   <div className="d-flex flex-column">
                     <b><h2>Contact Us</h2></b>
@@ -17,11 +17,13 @@ export default function Contactus() {
                     <p className="res-font mt-3">We are open to your queries and suggestions. Let us know your viewpoint via filling out the form below</p>
                   </div>
               </div>
-              <div className="col-md">
-                <center>
-                  <img src="contact.svg" className="image" alt="" />
-                </center>
-              </div>
+              <div className="col-md text-center">
+        <img
+          src="/contact.svg"
+          style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
+          alt="InnoTech Solutions"
+        />
+      </div>
             </div>
           </div>
         </div>

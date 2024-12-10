@@ -24,11 +24,11 @@ export default function About() {
     </div>
     {aboutUs.map((elem,index)=><div className='row mt-5 pt-5'>
       {index%2!==0?(<div className='row' key={index}>
-      <div className='col-12 col-md-6 d-flex flex-column justify-content-center gap-5'>
+      <div className='col-md d-flex flex-column justify-content-center gap-5'>
           <h1 style={{'color':'var(--secondary)'}}>{elem.title}</h1>   
-          <p className='res-font'>{elem.content}</p>
+          <p className='res-font text-start'>{elem.content}</p>
       </div>
-      <div className="col-12 col-md-6 text-center">
+      <div className="col-md text-center">
         <img
           src={elem.src}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
@@ -38,16 +38,16 @@ export default function About() {
       </div>)
 
       :(<div className='row' key={index} >
-      <div className="col-12 col-md-6 text-center">
+      <div className="col-md text-center">
         <img
           src={elem.src}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
           alt="InnoTech Solutions"
         />
       </div>
-      <div className='col-12 col-md-6 d-flex flex-column justify-content-center gap-5'>
+      <div className='col-md d-flex flex-column justify-content-center gap-5'>
           <h1 style={{ 'color': "var(--secondary)" }}>{elem.title}</h1>
-          <p className='res-font'>{elem.content}</p>   
+          <p className='res-font text-start'>{elem.content}</p>   
       </div>
       </div>)}
     </div>)}
