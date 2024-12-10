@@ -12,7 +12,7 @@ export default function Carousel({items}) {
                 items:1,
             },
             600:{
-                items:3,
+                items:2,
              
             },
             1000:{

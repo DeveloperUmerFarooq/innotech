@@ -1,5 +1,6 @@
 import React, { lazy} from 'react'
 import Footer from './components/Footer'
+import Technologies from './components/Technologies';
 const Goals=lazy(()=>import('./Goals'));
 const WhyUs = lazy(()=>import('./WhyUs'))
 const Contact = lazy(()=>import('./components/Contact'))
@@ -23,10 +24,12 @@ export default function Home() {
       </div>
     </div>
   </div>
-  
+  <div className='d-flex flex-column flex-grow'>
+  <Technologies/>
   <Goals/>
-  
   <WhyUs/>
+
+  </div>
   
     <div className='py-3' style={{ backgroundColor: 'var(--secondary)' }}>
       <h1 className='fs-1 text-center' style={{color:'var(--primary)'}}>Get Started</h1>
