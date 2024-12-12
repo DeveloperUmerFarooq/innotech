@@ -53,7 +53,7 @@ export default function About() {
     </div>)}
   </div>
 </div>
-<Goals/>
+  <Goals/>
     <div className='mt-md-5 mt-3 pt-md-5'>
       <h1 className='text-center'>Contact Us</h1>
       <br/>
