@@ -1,7 +1,7 @@
 import React,{lazy, Suspense, useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import Lottie from "lottie-react";
-import animation from './Loader.json'
+import animation from './JSON/Loader.json'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

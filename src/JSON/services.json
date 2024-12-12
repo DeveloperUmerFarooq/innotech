@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Front-End Development",
+        "description": "We create stunning, user-friendly interfaces using the latest technologies like HTML, CSS, JavaScript, React.js, Bootstrap, and Tailwind.",
+        "src": "assets/Frontend.webp"
+      },
+      {
+        "title": "Back-End Development",
+        "description": "Our back-end development ensures smooth and efficient operations using technologies like Laravel, Django, Flask, and MySQL.",
+        "src": "assets/Backend.png"
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "We provide comprehensive full-stack solutions, integrating front-end and back-end technologies for complete web applications.",
+        "src": "assets/Fullstack.png"
+      },
+      {
+        "title": "Machine Learning",
+        "description": "We harness the power of data to build custom ML models, enabling smarter decisions and automated processes.",
+        "src": "assets/ML.jpg"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "description": "Our AI services include chatbots, predictive analytics, and intelligent systems to enhance business efficiency.",
+        "src": "assets/AI.jpg"
+      },
+      {
+        "title": "Data Science",
+        "description": "We analyze complex data sets to uncover hidden patterns and insights, driving informed decision-making.",
+        "src": "assets/DataScience.jpg"
+      },
+      {
+        "title": "Leads Generation",
+        "description": "Our lead generation strategies attract high-quality customers using advanced techniques to boost sales and growth.",
+        "src": "assets/lead.webp"
+      }
+]

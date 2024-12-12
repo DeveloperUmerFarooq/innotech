@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import Lottie from 'lottie-react';
-import techs from '../techs.json'
+import techs from '../JSON/techs.json'
 import '../App.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -13,8 +13,10 @@ import figma from '../techAnimations/Figma.json';
 import laravel from '../techAnimations/Laravel.json';
 import bootstrap from '../techAnimations/bootstrap.png';
 import tailwind from '../techAnimations/tailwindcss.png';
+import python from '../techAnimations/Python.json';
+import sql from '../techAnimations/SQL.json'
 export default function Technologies() {
-    const [lotties,setLotties]=useState([react,html,css,js,bootstrap,tailwind,figma,laravel]);
+    const [lotties,setLotties]=useState([react,html,css,js,python,bootstrap,tailwind,figma,sql,laravel]);
     const options={
         autoplay:true,
         dots:false,
@@ -34,8 +36,8 @@ export default function Technologies() {
         }
     }
   return (
-    <div className='mt-3' style={{backgroundColor:'var(--tertiary)',color:'var(--primary)'}}>
-    <h1 className='text-center fs-1 mb-3'>Technologies we know</h1>
+    <div className='mt-2 mt-md-3' style={{backgroundColor:'var(--tertiary)',color:'var(--primary)'}}>
+    <h1 className='text-center fs-1 mb-1 mb-md-3 '>Technologies we know</h1>
     <OwlCarousel className="owl-theme mb-2" {...options}>
         {techs.map((tech,index)=>
         <div key={index} className='item d-flex justify-content-center align-items-center' style={{height:'5rem'}}>

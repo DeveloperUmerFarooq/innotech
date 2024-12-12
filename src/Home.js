@@ -1,14 +1,16 @@
 import React, { lazy} from 'react'
 import Footer from './components/Footer'
 import Technologies from './components/Technologies';
+import Carousel from './components/Carousel';
+import services from './JSON/services.json';
 const Goals=lazy(()=>import('./Goals'));
 const WhyUs = lazy(()=>import('./WhyUs'))
 const Contact = lazy(()=>import('./components/Contact'))
 export default function Home() {
   return (
-    <div className="pt-5" style={{ backgroundColor: 'var(--primary)' }}>
+    <div className="pt-2 pt-md-4" style={{ backgroundColor: 'var(--primary)' }}>
   <div className="container">
-    <div className="row mt-5 align-items-center">
+    <div className="row mt-3 mt-md-5 align-items-center">
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
         <h1 style={{color:'var(--secondary)'}}>Welcome to InnoTech Solutions</h1>
         <p className="res-font mx-auto mx-md-0 text-justify">
@@ -39,7 +41,11 @@ export default function Home() {
         <a href="#contact"><button className="btn btn-primary p-2">Contact us</button></a>
       </div>
     </div>
-    <div className='container pb-5 mt-5'>
+    <div className='container'>
+        <h1 className='text-center py-2 py-md-5' style={{color:"var(--tertiary)"}}>Services We provide</h1>
+    </div>
+    <Carousel items={services} color={"tertiary"}/>
+    <div className='container pb-md-5 pb-3 mt-5'>
     <h1 className='text-center fs-1'>Contact Us</h1>
     <Contact/>
       </div>

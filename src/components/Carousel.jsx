@@ -3,7 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Card from './Card';
-export default function Carousel({items}) {
+export default function Carousel({items,color="primary"}) {
     const options={
         autoplay:true,
         margin:10,
@@ -25,7 +25,7 @@ export default function Carousel({items}) {
     <div>
       <OwlCarousel className='owl-theme' {...options} loop>
         {items.map((item,index)=>(
-            <Card key={index} title={item.title} description={item.description} src={item.src} shadow={false} color={'primary'}/>
+            <Card key={index} title={item.title} description={item.description} src={item.src} shadow={false} color={color}/>
         ))
         }
     </OwlCarousel>
