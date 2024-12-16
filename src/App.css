@@ -28,6 +28,12 @@ header{
   animation: scale 0.8s infinite ease-in-out forwards !important;
   transition: all ease 0.2s;
 }
+.lottie{
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @keyframes scale {
   0%,100%{
     transform: scaleX(0.5);

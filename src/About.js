@@ -30,7 +30,7 @@ export default function About() {
       </div>
       <div className="col-md text-center">
         <img
-          src={elem.src}
+          src={`/about/${elem.src}`}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
           alt="InnoTech Solutions"
         />
@@ -40,7 +40,7 @@ export default function About() {
       :(<div className='row' key={index} >
       <div className="col-md text-center">
         <img
-          src={elem.src}
+          src={`/about/${elem.src}`}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
           alt="InnoTech Solutions"
         />

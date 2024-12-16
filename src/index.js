@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Lottie from "lottie-react";
 import animation from './JSON/Loader.json'
 import './index.css';
+import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
@@ -24,17 +25,17 @@ root.render(
     <ScrollToTop/>
       <Routes>
       <Route path='/' element={
-          <Suspense fallback={<Lottie animationData={animation} />}>
+          <Suspense fallback={<Lottie className='lottie' animationData={animation}/>}>
           <App/></Suspense>
         }></Route>
 
         <Route path='/about' element={
-          <Suspense fallback={<Lottie animationData={animation} />}>
+          <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
           <About/></Suspense>
         }></Route>
 
         <Route path='/contact' element={
-          <Suspense fallback={<Lottie animationData={animation} />}>
+          <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
           <Contactus/></Suspense>
         }/>
           
