@@ -16,7 +16,7 @@ import tailwind from '../techAnimations/tailwindcss.png';
 import python from '../techAnimations/Python.json';
 import sql from '../techAnimations/SQL.json'
 export default function Technologies() {
-    const [lotties,setLotties]=useState([react,html,css,js,python,bootstrap,tailwind,figma,sql,laravel]);
+    const lotties=[react,html,css,js,python,bootstrap,tailwind,figma,sql,laravel];
     const options={
         autoplay:true,
         dots:false,
@@ -41,7 +41,7 @@ export default function Technologies() {
     <OwlCarousel className="owl-theme mb-2" {...options}>
         {techs.map((tech,index)=>
         <div key={index} className='item d-flex justify-content-center align-items-center' style={{height:'5rem'}}>
-        {(tech==="Bootstrap"||tech==="Tailwind CSS")?<div><img className='img-anime mx-1' src={lotties[index]}/></div>:lotties&&<Lottie  loop={true}  animationData={lotties[index]} style={{height:'5rem'}} />}
+        {(tech==="Bootstrap"||tech==="Tailwind CSS")?<div><img className='img-anime mx-1' src={lotties[index]} alt='...'/></div>:lotties&&<Lottie  loop={true}  animationData={lotties[index]} style={{height:'5rem'}} />}
         <h2 className='text-center d-flex align-items-center fs-3 mt-3' style={{color:'var(--primary)'}}>{tech}</h2>
         </div> 
         )}

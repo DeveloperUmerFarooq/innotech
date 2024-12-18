@@ -34,9 +34,16 @@ header{
   left: 50%;
   transform: translateX(-50%);
 }
+
+.owl-dot>span{
+  background-color: var(--secondary) !important;
+}
+.active>span{
+  background-color: var(--tertiary) !important;
+} 
 @keyframes scale {
   0%,100%{
-    transform: scaleX(0.5);
+    transform: scaleX(0.8);
   }
   50%{
     transform: scaleX(1);

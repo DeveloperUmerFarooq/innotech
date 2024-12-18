@@ -3,9 +3,10 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Card from './Card';
-export default function Carousel({items,color="primary"}) {
+export default function Carousel({items,color="primary",dots=true}) {
     const options={
         autoplay:true,
+        dots:dots,
         margin:10,
         responsive:{
             0:{

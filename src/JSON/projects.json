@@ -1,5 +1,28 @@
 [
     {
-        
+        "title":"Skylink Tech Inc",
+        "src":"/projects/Skylink.png",
+        "description":"SkyLink Tech Inc is a sleek portfolio website showcasing services, values, and business details with a modern, responsive design."
+    },
+    
+    {
+        "title":"Foodies",
+        "src":"/projects/Foodies.png",
+        "description":"Foodies is a MERN Stack app with MongoDB-powered food sales and dedicated admin and user dashboards."
+    },
+    {
+        "title":"Techy",
+        "src":"/projects/Techy.png",
+        "description":"Techy is a responsive client landing page designed for modern, seamless user experiences."
+    },
+    {
+        "title":"News App",
+        "src":"/projects/News.png",
+        "description":"React Project using news api with basic understanding of states, useEffect, useContext and react routing."
+    },
+    {
+        "title":"Weather App",
+        "src":"/projects/weather.png",
+        "description":"The weather app provides real-time weather updates for users."
     }
 ]

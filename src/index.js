@@ -12,6 +12,7 @@ import Footer from './components/Footer.jsx';
 import Home from './Home.js';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
+import Projects from './Projects.js';
 const About = lazy(()=> import('./About'));
 const Contactus = lazy(()=> import('./Contactus.js'));
 const ScrollToTop = () => {
@@ -48,9 +49,13 @@ root.render(
         <Route path='/services' element={
                   <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
                   <Services/></Suspense>
-                }/>
-                  
-              </Routes>
+                }/>  
+
+        <Route path='/projects' element={
+                  <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
+                  <Projects/></Suspense>
+                }/> 
+      </Routes>
 
     <Footer/>
     </BrowserRouter>
