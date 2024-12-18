@@ -4,6 +4,10 @@
   --tertiary:#003459;
 }
 
+body{
+  background-color: var(--primary) !important;
+}
+
 #About{
   background-color: var(--primary);
 }
