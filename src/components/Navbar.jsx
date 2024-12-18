@@ -13,7 +13,7 @@ export default function Navbar(links) {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto gap-md-4 text-center">
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} aria-current="page" to="/">Home</Link>
-              <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">Services</Link>
+              <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/services">Services</Link>
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">Projects</Link>
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/about">About us</Link>
               <Link className="nav-link fs-5" style={{'color':'var(--primary)'}} to="/contact">Contact us</Link>

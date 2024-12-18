@@ -49,7 +49,6 @@ export default function Home() {
     <h1 className='text-center fs-1'>Contact Us</h1>
     <Contact/>
       </div>
-  <Footer/>
 </div>
   )
 }

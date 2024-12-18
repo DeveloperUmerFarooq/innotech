@@ -7,6 +7,9 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
+import Services from './Services.js';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 const About = lazy(()=> import('./About'));
 const Contactus = lazy(()=> import('./Contactus.js'));
 const ScrollToTop = () => {
@@ -22,6 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Navbar/>
     <ScrollToTop/>
       <Routes>
       <Route path='/' element={
@@ -38,8 +42,15 @@ root.render(
           <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
           <Contactus/></Suspense>
         }/>
-          
-      </Routes>
+
+        <Route path='/services' element={
+                  <Suspense fallback={<Lottie className='lottie' animationData={animation} />}>
+                  <Services/></Suspense>
+                }/>
+                  
+              </Routes>
+
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

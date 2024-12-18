@@ -1,13 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar'
 import aboutUs from './JSON/about.json'
 import Contact from './components/Contact'
-import Footer from './components/Footer';
 import Goals from './Goals';
 export default function About() {
   return ( 
     <div style={{backgroundColor:'var(--primary)'}}>
-    <Navbar/>
     <div className="container-fluid pt-md-5 pt-3 pt-3 px-5">
   <div className="container-fluid pt-md-5 pt-2 rounded-3 px-md-5">
     <div className="row  flex-columnlex-sm-column-reverse align-items-center">
@@ -61,7 +58,6 @@ export default function About() {
     <Contact/>
       </div>
     </div>
-    <Footer/>
     </div>
   )
 }

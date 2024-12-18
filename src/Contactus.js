@@ -6,8 +6,7 @@ import Footer from './components/Footer';
 export default function Contactus() {
   return (
     <div style={{backgroundColor:'var(--primary)'}}>
-    <Navbar/>
-    <div className="container-fluid mt-md-5 mt-1 pt-md-3 px-5 pb-md-5 pb-2">
+    <div className="container-fluid mt-1 pt-md-3 px-5 pb-md-5 pb-2">
           <div className="container-fluid pt-5 rounded-3 px-md-5">
             <div className="row flex-md-row flex-column-reverse align-items-center">
               <div className="col-md">
@@ -30,7 +29,6 @@ export default function Contactus() {
     <div className='container pt-md-5 mb-md-5 mt-md-5 mt-2 pt-2 shadow rounded-3'>
       <Contact/>
     </div>
-    <Footer/>
     </div>
   )
 }
