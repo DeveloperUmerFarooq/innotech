@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import Lottie from 'lottie-react';
 import techs from '../JSON/techs.json'
@@ -41,7 +41,7 @@ export default function Technologies() {
     <OwlCarousel className="owl-theme mb-2" {...options}>
         {techs.map((tech,index)=>
         <div key={index} className='item d-flex justify-content-center align-items-center' style={{height:'5rem'}}>
-        {(tech==="Bootstrap"||tech==="Tailwind CSS")?<div><img className='img-anime mx-1' src={lotties[index]} alt='...'/></div>:lotties&&<Lottie  loop={true}  animationData={lotties[index]} style={{height:'5rem'}} />}
+        {(tech==="Bootstrap"||tech==="Tailwind CSS")?<div><img className='img-anime mx-1' src={lotties[index]} alt='...'/></div>:lotties&&<Lottie  loop={true}  animationData={lotties[index]} style={{height:'4rem'}} />}
         <h2 className='text-center d-flex align-items-center fs-3 mt-3' style={{color:'var(--primary)'}}>{tech}</h2>
         </div> 
         )}
