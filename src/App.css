@@ -30,6 +30,8 @@ header{
 }
 .lottie{
   position: relative;
+  height: 50rem;
+  width: 50rem;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
