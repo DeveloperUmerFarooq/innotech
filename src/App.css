@@ -22,7 +22,7 @@ header{
 }
 .img-anime{
   height:3rem; 
-  width:5rem !important; 
+  width:3.5rem !important; 
   aspect-ratio:2/1;
   object-position: center;
   animation: scale 0.8s infinite ease-in-out forwards !important;
@@ -45,7 +45,7 @@ header{
 } 
 @keyframes scale {
   0%,100%{
-    transform: scaleX(0.8);
+    transform: scale(0.7 , 0.6);
   }
   50%{
     transform: scaleX(1);
