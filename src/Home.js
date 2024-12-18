@@ -43,7 +43,9 @@ export default function Home() {
     <div className='container'>
         <h1 className='text-center py-2 py-md-5' style={{color:"var(--tertiary)"}}>Services We provide</h1>
     </div>
+    <div className='px-md-3 px-1'>
     <Carousel items={services} color={"tertiary"}/>
+    </div>
     <div className='container pb-md-5 pb-3 mt-5'>
     <h1 className='text-center fs-1'>Contact Us</h1>
     <Contact/>

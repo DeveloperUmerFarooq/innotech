@@ -20,12 +20,12 @@ export default function About() {
       </div>
     </div>
     {aboutUs.map((elem,index)=><div className='row mt-md-5 mt-3 pt-md-5 pt-3'>
-      {index%2!==0?(<div className='row' key={index}>
+      {index%2!==0?(<div className='row gx-0' key={index}>
       <div className='col-md d-flex flex-column justify-content-center gap-md-5 gap-1'>
           <h1 style={{'color':'var(--secondary)'}}>{elem.title}</h1>   
           <p className='res-font text-start'>{elem.content}</p>
       </div>
-      <div className="col-md text-center">
+      <div className="col-md text-center align-self-center">
         <img
           src={`/about/${elem.src}`}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
@@ -34,8 +34,8 @@ export default function About() {
       </div>
       </div>)
 
-      :(<div className='row' key={index} >
-      <div className="col-md text-center">
+      :(<div className='row gx-0' key={index} >
+      <div className="col-md text-center align-self-center">
         <img
           src={`/about/${elem.src}`}
           style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}

@@ -26,7 +26,7 @@ export default function Carousel({items,color="primary",dots=true}) {
     <div>
       <OwlCarousel className='owl-theme' {...options} loop>
         {items.map((item,index)=>(
-            <Card key={index} title={item.title} description={item.description} src={item.src} shadow={false} color={color}/>
+            <Card key={index} title={item.title} description={item.description} src={item.src} color={color}/>
         ))
         }
     </OwlCarousel>

@@ -9,7 +9,7 @@ export default function Services() {
         <hr className='mb-md-5 mb-3'/>
         <div className='row mx-auto gy-3 justify-content-center pb-3 pb-md-5'>
           {services.map((service,key)=>
-          <div className='col-md-3'>
+          <div className='col-lg-3 col-md-6'>
             <Card className="h-100" key={key} title={service.title} description={service.description} src={service.src}/>
           </div>
           )
