@@ -4,12 +4,14 @@ import Lottie from "lottie-react";
 import animation from './JSON/Loader.json'
 import './index.css';
 import './App.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
 import Services from './Services.js';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import Home from './Home.js';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min'
 const About = lazy(()=> import('./About'));
 const Contactus = lazy(()=> import('./Contactus.js'));
 const ScrollToTop = () => {
@@ -30,7 +32,7 @@ root.render(
       <Routes>
       <Route path='/' element={
           <Suspense fallback={<Lottie className='lottie' animationData={animation}/>}>
-          <App/></Suspense>
+          <Home/></Suspense>
         }></Route>
 
         <Route path='/about' element={
