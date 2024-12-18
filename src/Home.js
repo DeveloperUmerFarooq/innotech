@@ -1,5 +1,4 @@
 import React, { lazy} from 'react'
-import Footer from './components/Footer'
 import Technologies from './components/Technologies';
 import Carousel from './components/Carousel';
 import services from './JSON/services.json';
