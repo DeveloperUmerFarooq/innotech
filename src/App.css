@@ -48,6 +48,6 @@ header{
     transform: scale(0.7 , 0.6);
   }
   50%{
-    transform: scaleX(1);
+    transform: scale(1);
   }
 }
